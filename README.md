@@ -16,9 +16,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/meta-laravel-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/meta-laravel-light.svg">
-    <img alt="tailcove/laravel facts" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/meta-laravel-dark.svg" height="34">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/stats-laravel-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/stats-laravel-light.svg">
+    <img alt="tailcove/laravel at a glance" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/stats-laravel-dark.svg">
   </picture>
 </p>
 
