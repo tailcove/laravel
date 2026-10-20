@@ -1,7 +1,7 @@
 # tailcove/laravel
 
 Monolog handler and Laravel service provider for shipping application logs to
-[Tailcove](https://tailcove.com). Batches up to 50 lines (or 2 seconds,
+[Tailcove](https://tailcove.dev). Batches up to 50 lines (or 2 seconds,
 whichever comes first) and sends them from `register_shutdown_function` —
 after the response has already gone out, so logging never adds latency to a
 request.
@@ -20,7 +20,7 @@ Laravel's package auto-discovery registers `TailcoveServiceProvider`
 automatically. Set two env vars:
 
 ```env
-TAILCOVE_ENDPOINT=https://ingest.tailcove.com/api/v1/logs
+TAILCOVE_ENDPOINT=https://ingest.tailcove.dev/api/v1/logs
 TAILCOVE_TOKEN=your-source-ingest-token
 ```
 
@@ -58,7 +58,7 @@ channel) by setting the same key directly on the channel's config array in
 
 | Env var | Default | Purpose |
 |---|---|---|
-| `TAILCOVE_ENDPOINT` | `https://ingest.tailcove.com/api/v1/logs` | Your source's ingest URL. |
+| `TAILCOVE_ENDPOINT` | `https://ingest.tailcove.dev/api/v1/logs` | Your source's ingest URL. |
 | `TAILCOVE_TOKEN` | — | The source's ingest token. Never commit this. |
 | `TAILCOVE_ENABLED` | `true` | Set `false` to keep the channel registered but silent — nothing is buffered or sent. |
 | `TAILCOVE_LEVEL` | `debug` | Minimum Monolog level the handler processes. |

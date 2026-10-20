@@ -3,6 +3,12 @@
     "description": "Monolog handler and Laravel service provider for sending application logs to Tailcove.",
     "type": "library",
     "license": "MIT",
+    "homepage": "https://tailcove.dev",
+    "support": {
+        "issues": "https://github.com/tailcove/laravel/issues",
+        "source": "https://github.com/tailcove/laravel",
+        "docs": "https://tailcove.dev/docs"
+    },
     "keywords": ["laravel", "logging", "monolog", "tailcove"],
     "require": {
         "php": "^8.2",
