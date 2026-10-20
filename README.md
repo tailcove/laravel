@@ -5,18 +5,21 @@
 </picture>
 
 <p align="center">
-  <a href="https://tailcove.dev/docs/sending-logs/laravel-package"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-docs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-docs-light.svg"><img alt="Documentation" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-docs-dark.svg" height="44"></picture></a>
+  <a href="https://tailcove.dev/docs/sending-logs/laravel-package"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-docs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-docs-light.svg"><img alt="Documentation" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-docs-dark.svg" height="40"></picture></a>
   &nbsp;
-  <a href="https://app.tailcove.dev/register"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-start-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-start-light.svg"><img alt="Get started free" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-start-dark.svg" height="44"></picture></a>
+  <a href="https://app.tailcove.dev/register"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-start-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-start-light.svg"><img alt="Get started free" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-start-dark.svg" height="40"></picture></a>
   &nbsp;
-  <a href="https://github.com/tailcove/laravel/issues/new/choose"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-bug-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-bug-light.svg"><img alt="Report a bug" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-bug-dark.svg" height="44"></picture></a>
+  <a href="https://packagist.org/packages/tailcove/laravel"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-packagist-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-packagist-light.svg"><img alt="View on Packagist" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-packagist-dark.svg" height="40"></picture></a>
+  &nbsp;
+  <a href="https://github.com/tailcove/laravel/issues/new/choose"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-bug-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-bug-light.svg"><img alt="Report a bug" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/btn-bug-dark.svg" height="40"></picture></a>
 </p>
 
 <p align="center">
-  <a href="https://packagist.org/packages/tailcove/laravel"><img alt="Packagist version" src="https://img.shields.io/packagist/v/tailcove/laravel?color=2DD4BF&labelColor=0A0A0A&style=flat-square"></a>
-  <img alt="PHP 8.2+" src="https://img.shields.io/packagist/dependency-v/tailcove/laravel/php?color=2DD4BF&labelColor=0A0A0A&style=flat-square">
-  <img alt="Laravel 11, 12, 13" src="https://img.shields.io/badge/laravel-11%20%7C%2012%20%7C%2013-2DD4BF?labelColor=0A0A0A&style=flat-square">
-  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-2DD4BF?labelColor=0A0A0A&style=flat-square"></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/meta-laravel-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/meta-laravel-light.svg">
+    <img alt="tailcove/laravel facts" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/meta-laravel-dark.svg" height="34">
+  </picture>
 </p>
 
 <h3 align="center">Send your Laravel logs to Tailcove with one <code>composer require</code>.</h3>
