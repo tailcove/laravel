@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'endpoint' => env('TAILCOVE_ENDPOINT', 'https://ingest.tailcove.com/api/v1/logs'),
+    'endpoint' => env('TAILCOVE_ENDPOINT', 'https://ingest.tailcove.dev/api/v1/logs'),
 
     'token' => env('TAILCOVE_TOKEN'),
 
