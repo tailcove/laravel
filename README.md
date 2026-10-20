@@ -1,8 +1,13 @@
-<h1 align="center">tailcove/laravel</h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-light.svg">
+  <img alt="tailcove/laravel: Tailcove for Laravel" src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-dark.svg" width="100%">
+</picture>
 
 <p align="center">
-  Send your Laravel logs to <a href="https://tailcove.dev">Tailcove</a> with one <code>composer require</code>.<br>
-  A Monolog channel that runs after the response, so it never slows a request down.
+  <a href="https://tailcove.dev/docs/sending-logs/laravel-package"><img alt="Documentation" src="https://img.shields.io/badge/Documentation-2DD4BF?style=for-the-badge&logoColor=0A0A0A"></a>
+  <a href="https://app.tailcove.dev/register"><img alt="Get started free" src="https://img.shields.io/badge/Get%20started%20free-0A0A0A?style=for-the-badge"></a>
+  <a href="https://github.com/tailcove/laravel/issues/new/choose"><img alt="Report a bug" src="https://img.shields.io/badge/Report%20a%20bug-0A0A0A?style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -13,22 +18,44 @@
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-2DD4BF?labelColor=0A0A0A"></a>
 </p>
 
-<p align="center">
-  <a href="https://tailcove.dev/docs/sending-logs/laravel-package">Documentation</a> ·
-  <a href="https://github.com/tailcove/laravel/issues">Report a bug</a> ·
-  <a href="https://app.tailcove.dev/register">Get started free</a>
-</p>
+<br>
 
----
+<h3 align="center">Send your Laravel logs to Tailcove with one <code>composer require</code>.</h3>
 
-## Why use it
+<br>
 
-- **No added latency.** Logs are batched (50 lines, or every 2 seconds) and sent from a shutdown function, after the response has already gone out.
-- **Safe.** A failed delivery is caught and written to PHP's `error_log()`. Logging will never be the reason a request fails.
-- **Context for free.** Every line carries the environment, hostname, authenticated user and a request ID.
-- **Exceptions as data.** `report($e)` arrives with class, message, location and trace, so the same error groups into one issue.
-- **Optional extras.** Turn on slow-query, failed-job and scheduler-failure logging with one setting each.
-- **Queue mode.** Prefer to keep this off the web worker entirely? Switch to a queued job with retries.
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h4>🚀 &nbsp;No added latency</h4>
+      Logs are sent from a shutdown function, after the response has already gone out.
+    </td>
+    <td width="33%" valign="top">
+      <h4>🛡️ &nbsp;Safe</h4>
+      A failed delivery is caught and written to <code>error_log()</code>. It never fails a request.
+    </td>
+    <td width="33%" valign="top">
+      <h4>🏷️ &nbsp;Context for free</h4>
+      Environment, hostname, signed-in user and a request ID on every line.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <h4>🧩 &nbsp;Exceptions as data</h4>
+      <code>report($e)</code> arrives with class, message, location and trace.
+    </td>
+    <td width="33%" valign="top">
+      <h4>🔧 &nbsp;Optional extras</h4>
+      Slow queries, failed jobs and scheduler failures, one setting each.
+    </td>
+    <td width="33%" valign="top">
+      <h4>📬 &nbsp;Queue mode</h4>
+      Prefer the worker? Switch to a queued job with retries.
+    </td>
+  </tr>
+</table>
+
+<br>
 
 ## Install
 
@@ -160,4 +187,10 @@ A failed delivery never throws into your app. It is caught and written to PHP's 
 
 ## License
 
-[MIT](LICENSE) © Akcybex
+[MIT](LICENSE) © AKCybex
+
+<br>
+
+<p align="center">
+  <sub>Built by <a href="https://akcybex.com">AKCybex</a> &nbsp;·&nbsp; <a href="https://tailcove.dev">tailcove.dev</a></sub>
+</p>
