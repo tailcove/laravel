@@ -1,8 +1,4 @@
-<a href="https://tailcove.dev/docs/sending-logs/laravel-package"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-light.svg">
-  <img alt="tailcove/laravel: Tailcove for Laravel. Version, runtime support, size and license." src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-dark.svg" width="100%">
-</picture></a>
+<a href="https://tailcove.dev/docs/sending-logs/laravel-package"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-light.svg"><img alt="tailcove/laravel: Tailcove for Laravel. Version, runtime support, size and license." src="https://raw.githubusercontent.com/tailcove/.github/main/profile/assets/packages/laravel-dark.svg" width="100%"></picture></a>
 
 <p align="center">
   <a href="https://tailcove.dev/docs/sending-logs/laravel-package">Documentation</a> &nbsp;·&nbsp;
