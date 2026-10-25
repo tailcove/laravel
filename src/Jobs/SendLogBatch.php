@@ -5,8 +5,6 @@ namespace Tailcove\Laravel\Jobs;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Illuminate\Queue\Attributes\Backoff;
-use Illuminate\Queue\Attributes\Tries;
 use Tailcove\Laravel\TailcoveHandler;
 
 /**
@@ -16,11 +14,16 @@ use Tailcove\Laravel\TailcoveHandler;
  * once retries are exhausted the batch lands in failed_jobs rather than
  * retrying forever or throwing into the surrounding application.
  */
-#[Tries(3)]
-#[Backoff([5, 30, 120])]
 class SendLogBatch implements ShouldQueue
 {
     use Dispatchable, Queueable;
+
+    public int $tries = 3;
+
+    /**
+     * @var list<int>
+     */
+    public array $backoff = [5, 30, 120];
 
     /**
      * @param  list<array<string, mixed>>  $batch
