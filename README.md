@@ -46,6 +46,18 @@ LOG_STACK=single,tailcove
 ],
 ```
 
+**On Laravel 10**, the default `config/logging.php` has no `LOG_STACK`: its `stack` channel is hard-coded to `['single']`. Make it read the variable, and keep `LOG_CHANNEL=stack`:
+
+```php
+'stack' => [
+    'driver' => 'stack',
+    'channels' => explode(',', env('LOG_STACK', 'single')),
+    'ignore_exceptions' => false,
+],
+```
+
+Never put `single,tailcove` in `LOG_CHANNEL`. Laravel reads it as one channel name and fails with `Log [single,tailcove] is not defined`.
+
 That's it. `Log::info(...)`, `Log::error(...)` and any exception you report now appear in Tailcove search and live tail within a couple of seconds.
 
 ## Configuration
