@@ -12,15 +12,15 @@ use Tailcove\Laravel\Tests\TestCase;
 |
 | The closure you provide to your test functions is always bound to a specific PHPUnit test
 | case class. By default, that class is "PHPUnit\Framework\TestCase". Of course, you may
-| need to change it using the "pest()" function to bind different classes or traits.
+| need to change it using the "uses()" function to bind different classes or traits.
 |
 */
 
-pest()->extend(TestCase::class)
+uses(TestCase::class)
  // ->use(RefreshDatabase::class)
     ->in('Feature');
 
-pest()->beforeEach(function () {
+uses()->beforeEach(function () {
     $this->socket = stream_socket_server('tcp://127.0.0.1:0');
     $port = (int) explode(':', stream_socket_get_name($this->socket, false))[1];
     $this->endpoint = "http://127.0.0.1:{$port}/api/v1/logs";

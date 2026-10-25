@@ -21,7 +21,7 @@
 composer require tailcove/laravel
 ```
 
-Requires PHP 8.2+ and Laravel 11, 12 or 13. Laravel's package auto-discovery registers the service provider for you.
+Requires PHP 8.1+ and Laravel 10, 11, 12 or 13. Laravel's package auto-discovery registers the service provider for you.
 
 ## Quick start
 
