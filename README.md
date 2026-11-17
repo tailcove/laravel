@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://tailcove.dev/docs/sending-logs/laravel-package">Documentation</a> &nbsp;·&nbsp;
-  <a href="https://app.tailcove.dev/register">Get started free</a> &nbsp;·&nbsp;
+  <a href="https://tailcove.dev/register">Get started free</a> &nbsp;·&nbsp;
   <a href="https://packagist.org/packages/tailcove/laravel">View on Packagist</a> &nbsp;·&nbsp;
   <a href="https://github.com/tailcove/laravel/issues/new/choose">Report a bug</a>
 </p>
@@ -25,7 +25,7 @@ Requires PHP 8.1+ and Laravel 10, 11, 12 or 13. Laravel's package auto-discovery
 
 ## Quick start
 
-**1. Get a token.** Create a source in your [Tailcove dashboard](https://app.tailcove.dev) and copy its ingest token. It is shown only once, so save it straight into your `.env`.
+**1. Get a token.** Create a source in your [Tailcove dashboard](https://tailcove.dev) and copy its ingest token. It is shown only once, so save it straight into your `.env`.
 
 **2. Add two lines to `.env`.**
 
@@ -161,7 +161,7 @@ A failed delivery never throws into your app. It is caught and written to PHP's 
 
 <p align="center">
   <a href="https://tailcove.dev/docs/sending-logs/laravel-package">Documentation</a> &nbsp;·&nbsp;
-  <a href="https://app.tailcove.dev/register">Get started free</a> &nbsp;·&nbsp;
+  <a href="https://tailcove.dev/register">Get started free</a> &nbsp;·&nbsp;
   <a href="https://github.com/tailcove/laravel/issues/new/choose">Report a bug</a> &nbsp;·&nbsp;
   <a href="LICENSE">MIT License</a>
 </p>
