@@ -120,6 +120,8 @@ TAILCOVE_DISPATCH=queue
 TAILCOVE_QUEUE_CONNECTION=redis
 ```
 
+Long-running processes never reach the shutdown function between units of work, so the package also sends what is buffered after every queue job (processed, failed or thrown) and when the worker stops (`queue:work`, Horizon), and after every request, task and tick under Octane. Nothing to configure.
+
 > **Security note:** in queue mode the ingest token travels inside the serialized job on your queue backend, and is stored in `failed_jobs` if every retry fails. Anyone who can read that store can read the token. If that matters, stay on `shutdown`, or lock down your queue store as you would any table holding secrets.
 
 ## Extras

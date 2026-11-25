@@ -8,6 +8,7 @@ use Monolog\LogRecord;
 use RuntimeException;
 use Tailcove\Laravel\Jobs\SendLogBatch;
 use Throwable;
+use WeakMap;
 
 /**
  * Batches log records and sends them to a Tailcove source's ingest
@@ -26,6 +27,15 @@ class TailcoveHandler extends AbstractProcessingHandler
     private bool $shutdownRegistered = false;
 
     /**
+     * Every live handler, so long-running processes (queue workers, Octane)
+     * can flush them all after each unit of work without knowing which log
+     * channels or stacks they belong to.
+     *
+     * @var WeakMap<self, true>|null
+     */
+    private static ?WeakMap $instances = null;
+
+    /**
      * @param  int|string|Level  $level
      */
     public function __construct(
@@ -40,6 +50,29 @@ class TailcoveHandler extends AbstractProcessingHandler
         bool $bubble = true,
     ) {
         parent::__construct($level, $bubble);
+
+        self::$instances ??= new WeakMap;
+        self::$instances[$this] = true;
+    }
+
+    /**
+     * Flushes every live handler's buffer. Called after each queue job and
+     * each Octane request, task or tick, where the process never reaches
+     * the shutdown flush between units of work. Never throws.
+     */
+    public static function flushAll(): void
+    {
+        if (self::$instances === null) {
+            return;
+        }
+
+        foreach (self::$instances as $handler => $_) {
+            try {
+                $handler->flush();
+            } catch (Throwable $e) {
+                error_log('[tailcove] failed to flush log buffer: '.$e->getMessage());
+            }
+        }
     }
 
     protected function write(LogRecord $record): void
